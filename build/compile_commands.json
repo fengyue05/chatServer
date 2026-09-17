@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/fengyue/workspace/chatServer/build/src/server",
+  "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server  -o CMakeFiles/ChatServer.dir/chatServer.cc.o -c /home/fengyue/workspace/chatServer/src/server/chatServer.cc",
+  "file": "/home/fengyue/workspace/chatServer/src/server/chatServer.cc",
+  "output": "src/server/CMakeFiles/ChatServer.dir/chatServer.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/chatServer/build/src/server",
+  "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server  -o CMakeFiles/ChatServer.dir/main.cc.o -c /home/fengyue/workspace/chatServer/src/server/main.cc",
+  "file": "/home/fengyue/workspace/chatServer/src/server/main.cc",
+  "output": "src/server/CMakeFiles/ChatServer.dir/main.cc.o"
+}
+]
