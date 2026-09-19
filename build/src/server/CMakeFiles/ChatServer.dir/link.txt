@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/ChatServer.dir/chatServer.cc.o CMakeFiles/ChatServer.dir/main.cc.o -o /home/fengyue/workspace/chatServer/bin/ChatServer  -lmuduo_net -lmuduo_base -lpthread
+/usr/bin/c++ CMakeFiles/ChatServer.dir/chatServer.cc.o CMakeFiles/ChatServer.dir/chatService.cc.o CMakeFiles/ChatServer.dir/main.cc.o CMakeFiles/ChatServer.dir/user.cc.o CMakeFiles/ChatServer.dir/usermodel.cc.o -o /home/fengyue/workspace/chatServer/bin/ChatServer  -lmuduo_net -lmuduo_base -lmysqlclient -lpthread

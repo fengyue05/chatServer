@@ -1,14 +1,32 @@
 [
 {
   "directory": "/home/fengyue/workspace/chatServer/build/src/server",
-  "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server  -o CMakeFiles/ChatServer.dir/chatServer.cc.o -c /home/fengyue/workspace/chatServer/src/server/chatServer.cc",
+  "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server -I/home/fengyue/workspace/chatServer/include/db  -o CMakeFiles/ChatServer.dir/chatServer.cc.o -c /home/fengyue/workspace/chatServer/src/server/chatServer.cc",
   "file": "/home/fengyue/workspace/chatServer/src/server/chatServer.cc",
   "output": "src/server/CMakeFiles/ChatServer.dir/chatServer.cc.o"
 },
 {
   "directory": "/home/fengyue/workspace/chatServer/build/src/server",
-  "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server  -o CMakeFiles/ChatServer.dir/main.cc.o -c /home/fengyue/workspace/chatServer/src/server/main.cc",
+  "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server -I/home/fengyue/workspace/chatServer/include/db  -o CMakeFiles/ChatServer.dir/chatService.cc.o -c /home/fengyue/workspace/chatServer/src/server/chatService.cc",
+  "file": "/home/fengyue/workspace/chatServer/src/server/chatService.cc",
+  "output": "src/server/CMakeFiles/ChatServer.dir/chatService.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/chatServer/build/src/server",
+  "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server -I/home/fengyue/workspace/chatServer/include/db  -o CMakeFiles/ChatServer.dir/main.cc.o -c /home/fengyue/workspace/chatServer/src/server/main.cc",
   "file": "/home/fengyue/workspace/chatServer/src/server/main.cc",
   "output": "src/server/CMakeFiles/ChatServer.dir/main.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/chatServer/build/src/server",
+  "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server -I/home/fengyue/workspace/chatServer/include/db  -o CMakeFiles/ChatServer.dir/user.cc.o -c /home/fengyue/workspace/chatServer/src/server/user.cc",
+  "file": "/home/fengyue/workspace/chatServer/src/server/user.cc",
+  "output": "src/server/CMakeFiles/ChatServer.dir/user.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/chatServer/build/src/server",
+  "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server -I/home/fengyue/workspace/chatServer/include/db  -o CMakeFiles/ChatServer.dir/usermodel.cc.o -c /home/fengyue/workspace/chatServer/src/server/usermodel.cc",
+  "file": "/home/fengyue/workspace/chatServer/src/server/usermodel.cc",
+  "output": "src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o"
 }
 ]

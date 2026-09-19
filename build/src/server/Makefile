@@ -161,6 +161,30 @@ chatServer.cc.s:
 	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/chatServer.cc.s
 .PHONY : chatServer.cc.s
 
+chatService.o: chatService.cc.o
+.PHONY : chatService.o
+
+# target to build an object file
+chatService.cc.o:
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/chatService.cc.o
+.PHONY : chatService.cc.o
+
+chatService.i: chatService.cc.i
+.PHONY : chatService.i
+
+# target to preprocess a source file
+chatService.cc.i:
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/chatService.cc.i
+.PHONY : chatService.cc.i
+
+chatService.s: chatService.cc.s
+.PHONY : chatService.s
+
+# target to generate assembly for a file
+chatService.cc.s:
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/chatService.cc.s
+.PHONY : chatService.cc.s
+
 main.o: main.cc.o
 .PHONY : main.o
 
@@ -185,6 +209,54 @@ main.cc.s:
 	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/main.cc.s
 .PHONY : main.cc.s
 
+user.o: user.cc.o
+.PHONY : user.o
+
+# target to build an object file
+user.cc.o:
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/user.cc.o
+.PHONY : user.cc.o
+
+user.i: user.cc.i
+.PHONY : user.i
+
+# target to preprocess a source file
+user.cc.i:
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/user.cc.i
+.PHONY : user.cc.i
+
+user.s: user.cc.s
+.PHONY : user.s
+
+# target to generate assembly for a file
+user.cc.s:
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/user.cc.s
+.PHONY : user.cc.s
+
+usermodel.o: usermodel.cc.o
+.PHONY : usermodel.o
+
+# target to build an object file
+usermodel.cc.o:
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o
+.PHONY : usermodel.cc.o
+
+usermodel.i: usermodel.cc.i
+.PHONY : usermodel.i
+
+# target to preprocess a source file
+usermodel.cc.i:
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/usermodel.cc.i
+.PHONY : usermodel.cc.i
+
+usermodel.s: usermodel.cc.s
+.PHONY : usermodel.s
+
+# target to generate assembly for a file
+usermodel.cc.s:
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/usermodel.cc.s
+.PHONY : usermodel.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,9 +270,18 @@ help:
 	@echo "... chatServer.o"
 	@echo "... chatServer.i"
 	@echo "... chatServer.s"
+	@echo "... chatService.o"
+	@echo "... chatService.i"
+	@echo "... chatService.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... user.o"
+	@echo "... user.i"
+	@echo "... user.s"
+	@echo "... usermodel.o"
+	@echo "... usermodel.i"
+	@echo "... usermodel.s"
 .PHONY : help
 
 

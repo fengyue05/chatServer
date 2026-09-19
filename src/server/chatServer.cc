@@ -1,6 +1,11 @@
 #include "chatServer.hpp"
+#include "chatService.hpp"
+#include <nlohmann/json.hpp>
 #include <functional>
+#include <nlohmann/json_fwd.hpp>
+#include <string>
 
+using json = nlohmann::json;
 
 chatServer::chatServer(EventLoop* loop, const InetAddress& listenAddr, const std::string& nameArg)
     : server_(loop, listenAddr, nameArg)
@@ -28,7 +33,14 @@ void chatServer::onConnection(const TcpConnectionPtr& conn)
     }
 }
 
-void chatServer::onMessage(const TcpConnectionPtr&, Buffer*, Timestamp)
+void chatServer::onMessage(const TcpConnectionPtr& conn, Buffer* buffer, Timestamp time)
 {
-
+    // 把缓冲区的数据放到字符串里面
+    std::string buf = buffer->retrieveAllAsString();
+    // 数据反序列化
+    json js = json::parse(buf);
+    // 这里达到的目的：完全解耦网络模块的代码和业务模块的代码
+    // 通过js["msgid"] 获取一个业务handler => conn js time 
+    auto handler = chatService::instance()->getHandler(js["msgid"].get<int>());
+    handler(conn, js, time);
 }

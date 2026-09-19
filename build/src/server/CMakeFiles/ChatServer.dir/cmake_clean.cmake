@@ -3,8 +3,14 @@ file(REMOVE_RECURSE
   "/home/fengyue/workspace/chatServer/bin/ChatServer.pdb"
   "CMakeFiles/ChatServer.dir/chatServer.cc.o"
   "CMakeFiles/ChatServer.dir/chatServer.cc.o.d"
+  "CMakeFiles/ChatServer.dir/chatService.cc.o"
+  "CMakeFiles/ChatServer.dir/chatService.cc.o.d"
   "CMakeFiles/ChatServer.dir/main.cc.o"
   "CMakeFiles/ChatServer.dir/main.cc.o.d"
+  "CMakeFiles/ChatServer.dir/user.cc.o"
+  "CMakeFiles/ChatServer.dir/user.cc.o.d"
+  "CMakeFiles/ChatServer.dir/usermodel.cc.o"
+  "CMakeFiles/ChatServer.dir/usermodel.cc.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

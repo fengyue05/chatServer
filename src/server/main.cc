@@ -1,5 +1,4 @@
 #include "chatServer.hpp"
-#include <iostream>
 #include <muduo/net/EventLoop.h>
 
 int main(int argc, char const *argv[])
