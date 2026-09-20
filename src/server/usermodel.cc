@@ -54,6 +54,15 @@ User userModel::query(int id)
     return User();
 }
 
+void userModel::reset()
+{
+    MySQL mysql;
+    if (mysql.connect())
+    {
+        mysql.update("update user set state = 'offline' where state = 'online'");
+    }
+}
+
 bool userModel::updateState(User& user)
 {
     std::array<char, 1024> sql;

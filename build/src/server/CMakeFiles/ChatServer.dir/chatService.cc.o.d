@@ -358,6 +358,8 @@ src/server/CMakeFiles/ChatServer.dir/chatService.cc.o: \
  /usr/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
  /home/fengyue/workspace/chatServer/include/server/usermodel.hpp \
  /home/fengyue/workspace/chatServer/include/server/user.hpp \
+ /home/fengyue/workspace/chatServer/include/server/friendmodel.hpp \
+ /home/fengyue/workspace/chatServer/include/server/offlinemessagemodel.hpp \
  /usr/include/c++/11/mutex /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h /usr/include/muduo/base/Logging.h \
  /usr/include/muduo/base/LogStream.h \

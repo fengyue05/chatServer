@@ -3,7 +3,7 @@
 #include <muduo/net/EventLoop.h>
 #include <signal.h>
 
-void resetHandler() 
+void resetHandler(int) 
 {
     chatService::instance()->reset();
     exit(0);

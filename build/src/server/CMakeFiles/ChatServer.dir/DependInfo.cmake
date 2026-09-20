@@ -10,7 +10,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/fengyue/workspace/chatServer/src/server/chatServer.cc" "src/server/CMakeFiles/ChatServer.dir/chatServer.cc.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/chatServer.cc.o.d"
   "/home/fengyue/workspace/chatServer/src/server/chatService.cc" "src/server/CMakeFiles/ChatServer.dir/chatService.cc.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/chatService.cc.o.d"
+  "/home/fengyue/workspace/chatServer/src/server/friendmodel.cc" "src/server/CMakeFiles/ChatServer.dir/friendmodel.cc.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/friendmodel.cc.o.d"
+  "/home/fengyue/workspace/chatServer/src/server/groupmodel.cc" "src/server/CMakeFiles/ChatServer.dir/groupmodel.cc.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/groupmodel.cc.o.d"
   "/home/fengyue/workspace/chatServer/src/server/main.cc" "src/server/CMakeFiles/ChatServer.dir/main.cc.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/main.cc.o.d"
+  "/home/fengyue/workspace/chatServer/src/server/offlinemessagemodel.cc" "src/server/CMakeFiles/ChatServer.dir/offlinemessagemodel.cc.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/offlinemessagemodel.cc.o.d"
   "/home/fengyue/workspace/chatServer/src/server/user.cc" "src/server/CMakeFiles/ChatServer.dir/user.cc.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/user.cc.o.d"
   "/home/fengyue/workspace/chatServer/src/server/usermodel.cc" "src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o.d"
   )

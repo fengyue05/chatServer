@@ -13,9 +13,27 @@
 },
 {
   "directory": "/home/fengyue/workspace/chatServer/build/src/server",
+  "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server -I/home/fengyue/workspace/chatServer/include/db  -o CMakeFiles/ChatServer.dir/friendmodel.cc.o -c /home/fengyue/workspace/chatServer/src/server/friendmodel.cc",
+  "file": "/home/fengyue/workspace/chatServer/src/server/friendmodel.cc",
+  "output": "src/server/CMakeFiles/ChatServer.dir/friendmodel.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/chatServer/build/src/server",
+  "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server -I/home/fengyue/workspace/chatServer/include/db  -o CMakeFiles/ChatServer.dir/groupmodel.cc.o -c /home/fengyue/workspace/chatServer/src/server/groupmodel.cc",
+  "file": "/home/fengyue/workspace/chatServer/src/server/groupmodel.cc",
+  "output": "src/server/CMakeFiles/ChatServer.dir/groupmodel.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/chatServer/build/src/server",
   "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server -I/home/fengyue/workspace/chatServer/include/db  -o CMakeFiles/ChatServer.dir/main.cc.o -c /home/fengyue/workspace/chatServer/src/server/main.cc",
   "file": "/home/fengyue/workspace/chatServer/src/server/main.cc",
   "output": "src/server/CMakeFiles/ChatServer.dir/main.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/chatServer/build/src/server",
+  "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server -I/home/fengyue/workspace/chatServer/include/db  -o CMakeFiles/ChatServer.dir/offlinemessagemodel.cc.o -c /home/fengyue/workspace/chatServer/src/server/offlinemessagemodel.cc",
+  "file": "/home/fengyue/workspace/chatServer/src/server/offlinemessagemodel.cc",
+  "output": "src/server/CMakeFiles/ChatServer.dir/offlinemessagemodel.cc.o"
 },
 {
   "directory": "/home/fengyue/workspace/chatServer/build/src/server",
