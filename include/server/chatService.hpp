@@ -10,6 +10,8 @@
 #include <muduo/net/TcpConnection.h>
 #include <nlohmann/json.hpp>
 #include "usermodel.hpp"
+#include "friendmodel.hpp"
+#include "offlinemessagemodel.hpp"
 #include <mutex>
 
 using namespace muduo::net;
@@ -28,7 +30,18 @@ public:
 
     // 注册
     void reg(TcpConnectionPtr conn, json& js, Timestamp time);
+
     MsgHandler getHandler(int msg);
+
+    // 客户异常退出
+    void clientCloseException(const TcpConnectionPtr& conn);
+
+    // 一对一聊天
+    void oneChat (TcpConnectionPtr conn, json& js, Timestamp time);
+
+    void reset();
+
+    void addFriend(TcpConnectionPtr conn, json& js, Timestamp time);
 private:
     chatService();
 
@@ -39,6 +52,12 @@ private:
     std::unordered_map<int, TcpConnectionPtr> userConnMap_;
     // 数据操作类
     userModel userModel_; 
+
+    // 离线信息操作类
+    offlineMessageModele offlineMessageModel_;
+
+    // 好友操作类
+    FriendModel friendModel_;
 };
 
 

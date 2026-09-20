@@ -358,7 +358,9 @@ src/server/CMakeFiles/ChatServer.dir/chatService.cc.o: \
  /usr/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
  /home/fengyue/workspace/chatServer/include/server/usermodel.hpp \
  /home/fengyue/workspace/chatServer/include/server/user.hpp \
- /usr/include/muduo/base/Logging.h /usr/include/muduo/base/LogStream.h \
+ /usr/include/c++/11/mutex /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/bits/unique_lock.h /usr/include/muduo/base/Logging.h \
+ /usr/include/muduo/base/LogStream.h \
  /home/fengyue/workspace/chatServer/include/db/mysql.hpp \
  /usr/include/mysql/mysql.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
