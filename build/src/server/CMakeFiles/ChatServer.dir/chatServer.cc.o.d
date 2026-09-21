@@ -364,5 +364,8 @@ src/server/CMakeFiles/ChatServer.dir/chatServer.cc.o: \
  /home/fengyue/workspace/chatServer/include/server/user.hpp \
  /home/fengyue/workspace/chatServer/include/server/friendmodel.hpp \
  /home/fengyue/workspace/chatServer/include/server/offlinemessagemodel.hpp \
+ /home/fengyue/workspace/chatServer/include/server/groupmodel.hpp \
+ /home/fengyue/workspace/chatServer/include/server/group.hpp \
+ /home/fengyue/workspace/chatServer/include/server/groupuser.hpp \
  /usr/include/c++/11/mutex /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h

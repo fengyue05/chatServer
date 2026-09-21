@@ -6,6 +6,9 @@ src/server/CMakeFiles/ChatServer.dir/chatServer.cc.o
  /home/fengyue/workspace/chatServer/include/server/chatServer.hpp
  /home/fengyue/workspace/chatServer/include/server/chatService.hpp
  /home/fengyue/workspace/chatServer/include/server/friendmodel.hpp
+ /home/fengyue/workspace/chatServer/include/server/group.hpp
+ /home/fengyue/workspace/chatServer/include/server/groupmodel.hpp
+ /home/fengyue/workspace/chatServer/include/server/groupuser.hpp
  /home/fengyue/workspace/chatServer/include/server/offlinemessagemodel.hpp
  /home/fengyue/workspace/chatServer/include/server/user.hpp
  /home/fengyue/workspace/chatServer/include/server/usermodel.hpp
@@ -453,6 +456,9 @@ src/server/CMakeFiles/ChatServer.dir/chatService.cc.o
  /home/fengyue/workspace/chatServer/include/public.hpp
  /home/fengyue/workspace/chatServer/include/server/chatService.hpp
  /home/fengyue/workspace/chatServer/include/server/friendmodel.hpp
+ /home/fengyue/workspace/chatServer/include/server/group.hpp
+ /home/fengyue/workspace/chatServer/include/server/groupmodel.hpp
+ /home/fengyue/workspace/chatServer/include/server/groupuser.hpp
  /home/fengyue/workspace/chatServer/include/server/offlinemessagemodel.hpp
  /home/fengyue/workspace/chatServer/include/server/user.hpp
  /home/fengyue/workspace/chatServer/include/server/usermodel.hpp
@@ -1368,6 +1374,9 @@ src/server/CMakeFiles/ChatServer.dir/main.cc.o
  /home/fengyue/workspace/chatServer/include/server/chatServer.hpp
  /home/fengyue/workspace/chatServer/include/server/chatService.hpp
  /home/fengyue/workspace/chatServer/include/server/friendmodel.hpp
+ /home/fengyue/workspace/chatServer/include/server/group.hpp
+ /home/fengyue/workspace/chatServer/include/server/groupmodel.hpp
+ /home/fengyue/workspace/chatServer/include/server/groupuser.hpp
  /home/fengyue/workspace/chatServer/include/server/offlinemessagemodel.hpp
  /home/fengyue/workspace/chatServer/include/server/user.hpp
  /home/fengyue/workspace/chatServer/include/server/usermodel.hpp

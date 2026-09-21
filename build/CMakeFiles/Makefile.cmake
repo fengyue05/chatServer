@@ -40,6 +40,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.0.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.0.2/CMakeSystem.cmake"
   "/home/fengyue/workspace/chatServer/src/CMakeLists.txt"
+  "/home/fengyue/workspace/chatServer/src/client/CMakeLists.txt"
   "/home/fengyue/workspace/chatServer/src/server/CMakeLists.txt"
   )
 
@@ -54,9 +55,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/server/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/client/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/server/CMakeFiles/ChatServer.dir/DependInfo.cmake"
+  "src/client/CMakeFiles/ChatClient.dir/DependInfo.cmake"
   )

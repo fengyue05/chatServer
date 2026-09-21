@@ -3,7 +3,8 @@
 	[
 		"/home/fengyue/workspace/chatServer/build/cmake_install.cmake",
 		"/home/fengyue/workspace/chatServer/build/src/cmake_install.cmake",
-		"/home/fengyue/workspace/chatServer/build/src/server/cmake_install.cmake"
+		"/home/fengyue/workspace/chatServer/build/src/server/cmake_install.cmake",
+		"/home/fengyue/workspace/chatServer/build/src/client/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

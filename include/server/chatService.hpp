@@ -12,6 +12,7 @@
 #include "usermodel.hpp"
 #include "friendmodel.hpp"
 #include "offlinemessagemodel.hpp"
+#include "groupmodel.hpp"
 #include <mutex>
 
 using namespace muduo::net;
@@ -42,6 +43,12 @@ public:
     void reset();
 
     void addFriend(TcpConnectionPtr conn, json& js, Timestamp time);
+
+    void createGroup(TcpConnectionPtr conn, json& js, Timestamp time);
+
+    void addGroup(TcpConnectionPtr conn, json& js, Timestamp time);
+
+    void groupChat(TcpConnectionPtr conn, json& js, Timestamp time);
 private:
     chatService();
 
@@ -58,6 +65,9 @@ private:
 
     // 好友操作类
     FriendModel friendModel_;
+
+    // 群组操作类
+    GroupModel groupModel_;
 };
 
 

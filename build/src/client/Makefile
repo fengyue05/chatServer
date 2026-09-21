@@ -87,21 +87,21 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fengyue/workspace/chatServer/build/CMakeFiles /home/fengyue/workspace/chatServer/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/fengyue/workspace/chatServer/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fengyue/workspace/chatServer/build/CMakeFiles /home/fengyue/workspace/chatServer/build/src/client//CMakeFiles/progress.marks
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/client/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fengyue/workspace/chatServer/build/CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fengyue/workspace/chatServer/build/CMakeFiles /home/fengyue/workspace/chatServer/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
+	cd /home/fengyue/workspace/chatServer/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fengyue/workspace/chatServer/build/CMakeFiles /home/fengyue/workspace/chatServer/build/src/client//CMakeFiles/progress.marks
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/client/codegen
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fengyue/workspace/chatServer/build/CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/client/clean
 .PHONY : clean
 
 # The main clean target
@@ -110,44 +110,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/client/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/client/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fengyue/workspace/chatServer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named ChatServer
+# Convenience name for target.
+src/client/CMakeFiles/ChatClient.dir/rule:
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/client/CMakeFiles/ChatClient.dir/rule
+.PHONY : src/client/CMakeFiles/ChatClient.dir/rule
 
-# Build rule for target.
-ChatServer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ChatServer
-.PHONY : ChatServer
-
-# fast build rule for target.
-ChatServer/fast:
-	$(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/build
-.PHONY : ChatServer/fast
-
-#=============================================================================
-# Target rules for targets named ChatClient
-
-# Build rule for target.
-ChatClient: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ChatClient
+# Convenience name for target.
+ChatClient: src/client/CMakeFiles/ChatClient.dir/rule
 .PHONY : ChatClient
 
 # fast build rule for target.
 ChatClient/fast:
-	$(MAKE) $(MAKESILENT) -f src/client/CMakeFiles/ChatClient.dir/build.make src/client/CMakeFiles/ChatClient.dir/build
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/client/CMakeFiles/ChatClient.dir/build.make src/client/CMakeFiles/ChatClient.dir/build
 .PHONY : ChatClient/fast
+
+main.o: main.cc.o
+.PHONY : main.o
+
+# target to build an object file
+main.cc.o:
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/client/CMakeFiles/ChatClient.dir/build.make src/client/CMakeFiles/ChatClient.dir/main.cc.o
+.PHONY : main.cc.o
+
+main.i: main.cc.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cc.i:
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/client/CMakeFiles/ChatClient.dir/build.make src/client/CMakeFiles/ChatClient.dir/main.cc.i
+.PHONY : main.cc.i
+
+main.s: main.cc.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cc.s:
+	cd /home/fengyue/workspace/chatServer/build && $(MAKE) $(MAKESILENT) -f src/client/CMakeFiles/ChatClient.dir/build.make src/client/CMakeFiles/ChatClient.dir/main.cc.s
+.PHONY : main.cc.s
 
 # Help Target
 help:
@@ -159,7 +171,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ChatClient"
-	@echo "... ChatServer"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -171,6 +185,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fengyue/workspace/chatServer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

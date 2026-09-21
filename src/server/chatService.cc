@@ -2,6 +2,7 @@
 #include <muduo/base/Logging.h>
 #include <mutex>
 #include <vector>
+#include "groupmodel.hpp"
 #include "mysql.hpp"
 #include "public.hpp"
 #include "user.hpp"
@@ -196,4 +197,46 @@ void chatService::addFriend(TcpConnectionPtr conn, json& js, Timestamp time)
     int friendId = js["friendId"].get<int>();
 
     friendModel_.insert(userId, friendId);   
+}
+
+void chatService::createGroup(TcpConnectionPtr conn, json& js, Timestamp time)
+{
+    int userId = js["id"].get<int>();
+    std::string name = js["groupname"];
+    std::string desc = js["groupdesc"];
+
+    Group group(-1, name, desc);
+    if (groupModel_.createGroup(group))
+    {
+        groupModel_.addGroup(userId, group.getId(), "creator");
+    }
+}
+
+void chatService::addGroup(TcpConnectionPtr conn, json& js, Timestamp time)
+{
+    int userId = js["id"].get<int>();
+    int groupId = js["groupid"].get<int>();
+
+    groupModel_.addGroup(userId, groupId, "nomal");
+}
+
+void chatService::groupChat(TcpConnectionPtr conn, json& js, Timestamp time)
+{
+    int userId = js["id"].get<int>();
+    int groupId = js["groupid"].get<int>();
+    std::vector<int> userIdVec = groupModel_.queryGroupUsers(userId, groupId);
+    std::lock_guard<std::mutex> lock(mutex_);
+    for (int id : userIdVec)
+    {
+        auto it = userConnMap_.find(id);
+        if (it != userConnMap_.end())
+        {
+            it->second->send(js.dump());
+        }
+        // 离线
+        else  
+        {
+            offlineMessageModel_.insert(id, js.dump());
+        }
+    }
 }

@@ -46,5 +46,11 @@
   "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server -I/home/fengyue/workspace/chatServer/include/db  -o CMakeFiles/ChatServer.dir/usermodel.cc.o -c /home/fengyue/workspace/chatServer/src/server/usermodel.cc",
   "file": "/home/fengyue/workspace/chatServer/src/server/usermodel.cc",
   "output": "src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o"
+},
+{
+  "directory": "/home/fengyue/workspace/chatServer/build/src/client",
+  "command": "/usr/bin/c++  -I/home/fengyue/workspace/chatServer/include -I/home/fengyue/workspace/chatServer/include/server -I/home/fengyue/workspace/chatServer/include/db  -o CMakeFiles/ChatClient.dir/main.cc.o -c /home/fengyue/workspace/chatServer/src/client/main.cc",
+  "file": "/home/fengyue/workspace/chatServer/src/client/main.cc",
+  "output": "src/client/CMakeFiles/ChatClient.dir/main.cc.o"
 }
 ]

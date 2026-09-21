@@ -73,3 +73,26 @@ std::vector<Group> GroupModel::queryGroups(int userId)
     }
     return groupVec;
 }
+
+std::vector<int> GroupModel::queryGroupUsers(int userId, int groupId)
+{
+    std::array<char, 1024> sql;
+    std::sprintf(sql.data(), "select userid from groupuser where groupid = %d and userid != %d", groupId, userId);
+
+    MySQL mysql;
+    std::vector<int> userIdVec;
+    if (mysql.connect())
+    {
+        MYSQL_RES* res = mysql.query(static_cast<std::string>(sql.data()));
+        if (res != nullptr)
+        {
+            MYSQL_ROW row;
+            while ((row = mysql_fetch_row(res)) != nullptr)
+            {
+                userIdVec.push_back(std::atoi(row[0]));
+            }
+            mysql_free_result(res);
+        }
+    }
+    return userIdVec;
+}

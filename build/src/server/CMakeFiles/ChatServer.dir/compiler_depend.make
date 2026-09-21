@@ -5,6 +5,9 @@ src/server/CMakeFiles/ChatServer.dir/chatServer.cc.o: /home/fengyue/workspace/ch
   /home/fengyue/workspace/chatServer/include/server/chatServer.hpp \
   /home/fengyue/workspace/chatServer/include/server/chatService.hpp \
   /home/fengyue/workspace/chatServer/include/server/friendmodel.hpp \
+  /home/fengyue/workspace/chatServer/include/server/group.hpp \
+  /home/fengyue/workspace/chatServer/include/server/groupmodel.hpp \
+  /home/fengyue/workspace/chatServer/include/server/groupuser.hpp \
   /home/fengyue/workspace/chatServer/include/server/offlinemessagemodel.hpp \
   /home/fengyue/workspace/chatServer/include/server/user.hpp \
   /home/fengyue/workspace/chatServer/include/server/usermodel.hpp \
@@ -451,6 +454,9 @@ src/server/CMakeFiles/ChatServer.dir/chatService.cc.o: /home/fengyue/workspace/c
   /home/fengyue/workspace/chatServer/include/public.hpp \
   /home/fengyue/workspace/chatServer/include/server/chatService.hpp \
   /home/fengyue/workspace/chatServer/include/server/friendmodel.hpp \
+  /home/fengyue/workspace/chatServer/include/server/group.hpp \
+  /home/fengyue/workspace/chatServer/include/server/groupmodel.hpp \
+  /home/fengyue/workspace/chatServer/include/server/groupuser.hpp \
   /home/fengyue/workspace/chatServer/include/server/offlinemessagemodel.hpp \
   /home/fengyue/workspace/chatServer/include/server/user.hpp \
   /home/fengyue/workspace/chatServer/include/server/usermodel.hpp \
@@ -1363,6 +1369,9 @@ src/server/CMakeFiles/ChatServer.dir/main.cc.o: /home/fengyue/workspace/chatServ
   /home/fengyue/workspace/chatServer/include/server/chatServer.hpp \
   /home/fengyue/workspace/chatServer/include/server/chatService.hpp \
   /home/fengyue/workspace/chatServer/include/server/friendmodel.hpp \
+  /home/fengyue/workspace/chatServer/include/server/group.hpp \
+  /home/fengyue/workspace/chatServer/include/server/groupmodel.hpp \
+  /home/fengyue/workspace/chatServer/include/server/groupuser.hpp \
   /home/fengyue/workspace/chatServer/include/server/offlinemessagemodel.hpp \
   /home/fengyue/workspace/chatServer/include/server/user.hpp \
   /home/fengyue/workspace/chatServer/include/server/usermodel.hpp \
@@ -2450,10 +2459,6 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 
 /usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
-/home/fengyue/workspace/chatServer/include/server/groupuser.hpp:
-
-/home/fengyue/workspace/chatServer/include/server/group.hpp:
-
 /home/fengyue/workspace/chatServer/src/server/friendmodel.cc:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
@@ -2497,10 +2502,6 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
-
-/home/fengyue/workspace/chatServer/include/server/groupmodel.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h:
 
@@ -2620,6 +2621,12 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
@@ -2717,6 +2724,8 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 /usr/include/nlohmann/detail/macro_unscope.hpp:
 
 /usr/include/boost/core/addressof.hpp:
+
+/home/fengyue/workspace/chatServer/include/server/group.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -2818,15 +2827,7 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 
 /usr/include/nlohmann/detail/conversions/to_chars.hpp:
 
-/usr/include/boost/current_function.hpp:
-
-/usr/include/boost/type_index/stl_type_index.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
-/usr/include/boost/type_traits/decay.hpp:
-
-/usr/include/c++/11/cstdint:
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
 /usr/include/boost/core/enable_if.hpp:
 
@@ -2835,6 +2836,10 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
 /usr/include/boost/type_traits/is_const.hpp:
+
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/include/c++/11/bits/stl_algobase.h:
 
 /usr/include/c++/11/bits/range_access.h:
 
@@ -2849,16 +2854,6 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 /usr/include/boost/version.hpp:
 
 /usr/include/nlohmann/detail/conversions/from_json.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/netinet/in.h:
-
-/usr/include/boost/detail/workaround.hpp:
-
-/usr/include/nlohmann/detail/meta/detected.hpp:
-
-/usr/include/c++/11/bits/uniform_int_dist.h:
 
 /usr/include/boost/config/helper_macros.hpp:
 
@@ -2880,25 +2875,19 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 
 /usr/include/boost/config/detail/select_stdlib_config.hpp:
 
-/usr/include/boost/type_traits/add_pointer.hpp:
+/usr/include/c++/11/bits/gslice.h:
 
-/usr/include/boost/config/workaround.hpp:
+/usr/include/sched.h:
 
-/usr/include/boost/assert/source_location.hpp:
+/usr/include/boost/type_traits/is_same.hpp:
 
-/usr/include/boost/config/detail/posix_features.hpp:
+/usr/include/muduo/base/CurrentThread.h:
 
-/home/fengyue/workspace/chatServer/include/server/offlinemessagemodel.hpp:
+/usr/include/c++/11/bits/std_function.h:
 
-/usr/include/c++/11/ios:
+/home/fengyue/workspace/chatServer/include/server/chatService.hpp:
 
-/usr/include/c++/11/cassert:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
-/usr/include/c++/11/ext/new_allocator.h:
-
-/home/fengyue/workspace/chatServer/include/server/friendmodel.hpp:
+/usr/include/asm-generic/sockios.h:
 
 /usr/include/c++/11/bits/valarray_before.h:
 
@@ -2928,14 +2917,6 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 
 /usr/include/boost/type_traits/is_array.hpp:
 
-/usr/include/c++/11/bits/std_function.h:
-
-/home/fengyue/workspace/chatServer/include/server/chatService.hpp:
-
-/usr/include/nlohmann/detail/iterators/iteration_proxy.hpp:
-
-/usr/include/c++/11/bits/move.h:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
 /usr/include/c++/11/bits/ostream_insert.h:
@@ -2946,15 +2927,49 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 
 /usr/include/c++/11/map:
 
-/usr/include/c++/11/bits/stringfwd.h:
+/usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/nlohmann/detail/hash.hpp:
+/usr/include/netinet/in.h:
+
+/usr/include/boost/detail/workaround.hpp:
+
+/usr/include/nlohmann/detail/meta/detected.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
+
+/home/fengyue/workspace/chatServer/include/server/groupmodel.hpp:
+
+/usr/include/strings.h:
+
+/usr/include/muduo/base/StringPiece.h:
+
+/usr/include/boost/config/detail/posix_features.hpp:
+
+/home/fengyue/workspace/chatServer/include/server/offlinemessagemodel.hpp:
+
+/usr/include/c++/11/ios:
+
+/usr/include/c++/11/cassert:
+
+/usr/include/c++/11/bits/move.h:
+
+/usr/include/nlohmann/detail/iterators/iteration_proxy.hpp:
 
 /home/fengyue/workspace/chatServer/include/server/user.hpp:
 
 /usr/include/c++/11/iterator:
 
-/usr/include/boost/utility/enable_if.hpp:
+/usr/include/c++/11/debug/assertions.h:
+
+/usr/include/boost/container_hash/hash_fwd.hpp:
+
+/usr/include/asm-generic/errno.h:
+
+/home/fengyue/workspace/chatServer/include/server/groupuser.hpp:
+
+/usr/include/c++/11/unordered_map:
+
+/usr/include/boost/core/demangle.hpp:
 
 /usr/include/c++/11/bits/nested_exception.h:
 
@@ -2968,21 +2983,29 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 
 /usr/include/c++/11/bits/locale_conv.h:
 
-/usr/include/c++/11/bits/gslice.h:
+/usr/include/boost/type_index/stl_type_index.hpp:
 
-/usr/include/sched.h:
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
-/usr/include/boost/type_traits/is_same.hpp:
+/usr/include/boost/type_traits/decay.hpp:
 
-/usr/include/muduo/base/CurrentThread.h:
+/usr/include/c++/11/cstdint:
 
-/usr/include/c++/11/debug/assertions.h:
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
-/usr/include/asm-generic/errno.h:
+/home/fengyue/workspace/chatServer/include/server/friendmodel.hpp:
 
-/usr/include/boost/container_hash/hash_fwd.hpp:
+/usr/include/c++/11/ext/new_allocator.h:
 
-/usr/include/asm-generic/sockios.h:
+/usr/include/boost/config/workaround.hpp:
+
+/usr/include/boost/assert/source_location.hpp:
+
+/usr/include/boost/type_traits/add_pointer.hpp:
+
+/usr/include/boost/current_function.hpp:
+
+/usr/include/boost/utility/enable_if.hpp:
 
 /usr/include/boost/exception/exception.hpp:
 
@@ -3014,15 +3037,7 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 
 /usr/include/nlohmann/detail/string_escape.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
 /usr/include/boost/type_index.hpp:
-
-/usr/include/c++/11/bits/basic_string.tcc:
-
-/usr/include/c++/11/bits/string_view.tcc:
 
 /usr/include/boost/type_traits/remove_cv.hpp:
 
@@ -3033,8 +3048,6 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 /usr/include/boost/type_traits/is_lvalue_reference.hpp:
 
 /usr/include/nlohmann/detail/json_pointer.hpp:
-
-/usr/include/boost/core/demangle.hpp:
 
 /usr/include/c++/11/array:
 
@@ -3084,7 +3097,15 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 
 /usr/include/c++/11/bits/allocated_ptr.h:
 
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+/usr/include/c++/11/bits/basic_string.tcc:
+
+/usr/include/c++/11/bits/string_view.tcc:
+
+/usr/include/c++/11/bits/stringfwd.h:
+
+/usr/include/nlohmann/detail/hash.hpp:
+
+/usr/include/c++/11/bits/uniform_int_dist.h:
 
 /usr/include/boost/type_traits/remove_extent.hpp:
 
@@ -3268,8 +3289,6 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 
 /usr/include/c++/11/typeinfo:
 
-/usr/include/c++/11/unordered_map:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/c++/11/valarray:
@@ -3308,10 +3327,6 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 
 /usr/include/nlohmann/detail/iterators/internal_iterator.hpp:
 
-/usr/include/strings.h:
-
-/usr/include/muduo/base/StringPiece.h:
-
 /usr/include/muduo/base/Types.h:
 
 /usr/include/muduo/net/Buffer.h:
@@ -3339,10 +3354,6 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 /usr/include/stdio.h:
 
 /usr/include/nlohmann/detail/input/json_sax.hpp:
-
-/usr/include/c++/11/bits/stl_algobase.h:
-
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
 /home/fengyue/workspace/chatServer/src/server/usermodel.cc:
 
@@ -3415,5 +3426,3 @@ src/server/CMakeFiles/ChatServer.dir/usermodel.cc.o: /home/fengyue/workspace/cha
 /usr/include/muduo/net/TimerId.h:
 
 /usr/include/wchar.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
